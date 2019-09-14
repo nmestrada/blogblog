@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+  }
+
+body{
+      margin:auto;
+      height:100vh;
+  }
