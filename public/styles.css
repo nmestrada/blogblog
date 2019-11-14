@@ -6,9 +6,10 @@
 body {
   color: #484848;
   font-family: 'Lato', sans-serif;
-  padding: .45em 2.65em 3em;
+  /* padding: .45em 2.65em 3em; */
   line-height: 1.5;
-  margin-top:2em;
+  margin-top: 0;
+  max-width: 100vw;
 }
 h1 {
   margin: auto;
@@ -27,16 +28,15 @@ img {
     display:flex;
     justify-content: space-between;
     grid-area: "nav";
-}
-.nav li{
-    display:inline;
+    background-color: #D57D93;
+    color: white;
 }
 .nav a{
     display:inline-block;
     padding:10px;
     text-decoration: none;
-    color:#D57D93;
     text-transform: uppercase;
+    color: white;
 }
 .nav a:hover {
   color: green;
@@ -93,10 +93,9 @@ input, textarea {
     flex-direction: row;
 }
 .main{
-    max-width: 80rem;
-    margin:auto;
-    margin-top: 3rem;
+    margin:3rem;
     grid-area: "main";
+    max-width: 70rem;
 }
 .wrapper {
     display: grid;

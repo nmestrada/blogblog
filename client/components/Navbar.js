@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+
 
 export default function Navbar() {
     const [toggle, setToggle] = useState(false)
@@ -16,22 +17,16 @@ export default function Navbar() {
                     {'NE'}
                 </Link></h1>
                 <div className="Links">
-                <Link to="/">Home</Link>
-                <Link to="/blog">Blog</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/newForm">New Post</Link>
-                </div>
-                <div id="menu-button" onClick={(e) => openMenu(e)}>
-                    <div id="line-1"/>
-                    <div id="line-2"/>
-                    <div id="line-3"/>
-                </div>
-                <div id="menu" className="hide">
-                    <ul>
-                        <li><a href="#" target="_blank">Blog</a></li>
-                        <li><a href="#" target="_blank">Projects</a></li>
-                        <li><a href="#" target="_blank">New Post</a></li>
-                    </ul>
+                    <Link to="/">Home</Link>
+                    <Link to="/blog">Blog</Link>
+                    <Link to="/projects">Projects</Link>
+                    <Link to="/newForm">New Post</Link>
+                    
+                    <div id="menu-button" onClick={(e) => openMenu(e)}>
+                        <div id="line-1"/>
+                        <div id="line-2"/>
+                        <div id="line-3"/>
+                    </div>
                 </div>
             </nav>
         </div>

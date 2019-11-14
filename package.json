@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha ./test/*.spec.js --compilers js:babel-register",
     "start": "node server/app.js",
-    "start-dev": "webpack -w & nodemon server/app.js",
+    "start-dev": "webpack -w & nodemon server/app.js --watch",
     "seed": "node seed.js"
   },
   "keywords": [],
@@ -52,6 +52,7 @@
     "react": "^16.9.0",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.9.0",
+    "react-icons": "^3.8.0",
     "react-redux": "^7.1.1",
     "react-router-dom": "^5.0.1",
     "redux": "^4.0.4",
