@@ -1,15 +1,19 @@
+//import './style.css';
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
-import store from './client/redux/store'
-import Root from './client/components/Root'
-import './style.css';
-
+import {Provider} from 'react-redux'
+import {Router} from 'react-router-dom'
+import history from './client/history'
+import store from './client/redux/index'
+import App from './client/app'
+import './style.scss';
 
 
 ReactDOM.render(
-    <Provider store={store}>
-      <Root />
-    </Provider>,
-    document.getElementById('app')
-  )
+  <Provider store={store}>
+    <Router history={history}>
+      <App />
+    </Router>
+  </Provider>,
+  document.getElementById('app')
+)

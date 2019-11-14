@@ -18,10 +18,11 @@ module.exports = {
           },
           // use the style-loader/css-loader combos for anything matching the .css extension
           {
-            test: /\.css$/,
+            test: /\.s[ac]ss$/,
             use: [
               'style-loader',
               'css-loader',
+              'sass-loader',
             ]
           }
         ]

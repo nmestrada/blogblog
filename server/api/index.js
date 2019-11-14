@@ -3,7 +3,7 @@ const router = require('express').Router()
 
 
 //mounting routes
-router.use('/puppies', require('./puppies')); // matches all requests to  /api/puppies/
+router.use('/posts', require('./posts')); // matches all requests to  /api/puppies/
 router.use('/users', require('./users'))
 
 //routes 404 handler

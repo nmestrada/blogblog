@@ -4,7 +4,6 @@ const app = express();
 const morgan = require('morgan');
 const db = require('./db/database'); 
 const session = require('express-session');
-require('./index.js')    
 if (process.env.NODE_ENV === 'development') {
     require('./localSecrets'); // this will mutate the process.env object with your secrets.
   }
@@ -43,7 +42,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Any routes or other various middlewares should go here!
 app.use(express.static(path.join(__dirname, '..', 'public')))
-app.use(require('./passport.middleware'))
 
 app.use('/api', require('./api'))
 app.use('/auth', require('./auth'))

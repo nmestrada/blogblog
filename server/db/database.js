@@ -1,10 +1,9 @@
 const Sequelize = require('sequelize')
 
-const dbName = "boilerplate";
+const dbName = "blogblog";
 
 const db = new Sequelize(`postgres://localhost:5432/${dbName}`, {
   logging: false,
-  operatorsAliases: false,
 })
 
 //if you want to read a URL DB

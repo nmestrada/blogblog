@@ -1,0 +1,11 @@
+$body-color: black;
+
+body {
+  color: $body-color;
+}
+a[href*="linkedin"] {
+    color: blue;
+    width: 5px;
+    height: 5px;
+    background-image: url('/pics/linkedinIcon.jpeg') ;
+}
