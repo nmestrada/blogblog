@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
+import { FiGithub } from "react-icons/fi";
+import { AiOutlineLinkedin } from "react-icons/ai"
 
 
 export default function Navbar() {
@@ -22,11 +24,13 @@ export default function Navbar() {
                     <Link to="/projects">Projects</Link>
                     <Link to="/newForm">New Post</Link>
                     
-                    <div id="menu-button" onClick={(e) => openMenu(e)}>
+                    {/* <div id="menu-button" onClick={(e) => openMenu(e)}>
                         <div id="line-1"/>
                         <div id="line-2"/>
                         <div id="line-3"/>
-                    </div>
+                    </div> */}
+                    <a href="https://www.linkedin.com/in/natalie-estrada-dev/"><AiOutlineLinkedin/></a> 
+                        <a href="https://github.com/nmestrada"><FiGithub/></a>
                 </div>
             </nav>
         </div>
